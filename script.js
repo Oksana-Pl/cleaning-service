@@ -117,46 +117,19 @@ serviceChoices.forEach((input) => {
 
 // Background video is optional. Remove this block and the <video> to return to the photo.
 const heroVideo = document.querySelector('.hero-video');
-const videoToggle = document.querySelector('.hero-video-toggle');
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-
-function updateVideoButton() {
-  videoToggle.textContent = heroVideo.paused ? 'PLAY VIDEO ▶' : 'PAUSE VIDEO Ⅱ';
-  videoToggle.setAttribute('aria-label', heroVideo.paused ? 'Play background video' : 'Pause background video');
-}
-
 function startHeroVideo() {
   if (reducedMotion.matches) return;
   heroVideo.muted = true;
   if (!heroVideo.getAttribute('src')) heroVideo.src = heroVideo.dataset.src;
-  heroVideo.play().catch(() => {
-    // Autoplay may be blocked. Keep the photograph and offer manual playback.
-    if (!heroVideo.error) {
-      videoToggle.hidden = false;
-      updateVideoButton();
-    }
-  });
+  heroVideo.play().catch(() => { /* Keep the photograph if autoplay is unavailable. */ });
 }
-
-heroVideo.addEventListener('playing', () => {
-  heroVideo.classList.add('is-visible');
-  videoToggle.hidden = reducedMotion.matches;
-  updateVideoButton();
-});
-heroVideo.addEventListener('pause', updateVideoButton);
-heroVideo.addEventListener('error', () => {
-  heroVideo.classList.remove('is-visible');
-  videoToggle.hidden = true;
-});
-videoToggle.addEventListener('click', () => {
-  if (heroVideo.paused) startHeroVideo();
-  else heroVideo.pause();
-});
+heroVideo.addEventListener('playing', () => heroVideo.classList.add('is-visible'));
+heroVideo.addEventListener('error', () => heroVideo.classList.remove('is-visible'));
 reducedMotion.addEventListener('change', () => {
   if (reducedMotion.matches) {
     heroVideo.pause();
     heroVideo.classList.remove('is-visible');
-    videoToggle.hidden = true;
     heroVideo.removeAttribute('src');
     heroVideo.load();
   } else startHeroVideo();
