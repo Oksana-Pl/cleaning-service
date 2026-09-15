@@ -1362,33 +1362,16 @@ footer {
   pointer-events: none;
 }
 .hero-video.is-visible { opacity: 1; }
-.hero-video-toggle {
-  position: absolute;
-  z-index: 3;
-  right: 6%;
-  bottom: 140px;
-  min-height: 44px;
-  padding: 10px 16px;
-  border: 1px solid #ffffff50;
-  border-radius: 24px;
-  background: rgba(10, 37, 45, .76);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  color: white;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: .7px;
-  cursor: pointer;
-}
-.hero-video-toggle[hidden] { display: none; }
-.hero-video-toggle span { margin-left: 12px; }
-.hero-video-toggle:focus-visible { outline: 3px solid white; outline-offset: 4px; }
+
+
+
+
 @media (max-width: 650px) {
   .hero-video { object-position: 62% center; }
-  .hero-video-toggle { bottom: 115px; }
+  
 }
 @media (prefers-reduced-motion: reduce) {
-  .hero-video, .hero-video-toggle { display: none; }
+  .hero-video, 
 }
 
 /* Full mattress photo replaces the former split image. */
@@ -1458,3 +1441,7 @@ footer {
   .accent-reveal.motion-pending, .hero-line.motion-pending, .card-motion.motion-pending { transform:none; opacity:1; }
   .accent-reveal.motion-ready, .hero-line.motion-ready, .card-motion.motion-ready { transition:none; }
 }
+
+/* Vector icons remain monochrome on iOS and Android. */
+.ui-icon { display:inline-block; width:1em; height:1em; vertical-align:-.125em; flex-shrink:0; }
+.little-star .ui-icon, .quote-spark .ui-icon { vertical-align:baseline; }
