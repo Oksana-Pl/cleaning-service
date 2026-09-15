@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Specialist carpet and mattress cleaning, plus hotel linen laundry. Explore textile care for homes and hospitality properties.">
+    <meta name="theme-color" content="#123c43">
+    <title>FRESH — Carpet, Mattress &amp; Linen Care</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <!-- Header and main navigation -->
+    <header class="header">
+      <a class="brand" href="#" aria-label="Fresh home"><svg viewBox="0 0 36 36" aria-hidden="true"><path d="M18 2c0 10-6 16-16 16 10 0 16 6 16 16 0-10 6-16 16-16C24 18 18 12 18 2Z"></path></svg>fresh<span class="brand-dot">.</span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu <span>☰</span></button>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="#services">Our services</a>
+        <a href="#hospitality">For hospitality</a>
+        <a href="#questions">Good to know</a>
+        <a class="nav-cta" href="#quote">Let’s talk <span>↗</span></a>
+      </nav>
+    </header>
+    <!-- Main page content -->
+    <main id="main">
+      <!-- Hero section -->
+      <section class="hero" aria-labelledby="hero-title">
+        <!-- Original photograph stays underneath the video as a fallback. -->
+        <div class="hero-photo"></div>
+        <video class="hero-video" data-src="images/hero-video.mp4" poster="images/hero.jpg" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+        <button class="hero-video-toggle" type="button" hidden aria-label="Pause background video">PAUSE VIDEO <span aria-hidden="true">Ⅱ</span></button>
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow light"><span class="little-star">✳</span> A fresh approach to textile care</p>
+          <h1 id="hero-title"><span class="hero-line hero-line-first">A deeper clean.</span><br><span class="hero-line hero-line-second">A fresher feeling.</span></h1>
+          <p class="hero-description">Carpet &amp; mattress cleaning.<br>Hotel linen laundry.<br>Care for every fibre.</p>
+          <a href="#quote" class="button white">Find your fresh <span>↗</span></a>
+        </div>
+        <div class="hero-bottom">
+          <span>For homes. For hospitality.</span>
+          <a href="#services">Discover the difference <span>↓</span></a>
+        </div>
+      </section>
+      <!-- Intro section -->
+      <section class="intro wrap">
+        <p class="eyebrow">Small details. A big difference.</p>
+        <h2>Fresh starts<br>from the <span class="serene accent-reveal accent-up">ground up.</span></h2>
+        <p>From the carpet beneath your feet to the linen your guests sleep in. Thoughtful textile care, for spaces that feel good to be in.</p>
+      </section>
+      <!-- Services: carpet, mattress and linen -->
+      <section id="services" class="services wrap">
+        <div class="section-top">
+          <p class="eyebrow">01 / What we care for</p>
+          <span class="small-note">Three services. One fresh outlook.</span>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-image carpet-image">
+              <img src="images/carpet-clean.jpg" alt="Fresh blue carpet in a softly lit room" loading="lazy">
+              <span class="number">01</span>
+            </div>
+            <div class="card-heading">
+              <h3>Carpet care</h3>
+              <a href="#quote" data-service="Carpet cleaning" aria-label="Enquire about carpet cleaning">↗</a>
+            </div>
+            <p>A fresh feel for bedrooms, living spaces, stairs and guest rooms. Specialist cleaning for everyday dirt and marks.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-image mattress-image">
+              <img src="images/mattress-only.jpg" alt="Detail of a fresh quilted mattress" loading="lazy">
+              <span class="number">02</span>
+            </div>
+            <div class="card-heading">
+              <h3>Mattress care</h3>
+              <a href="#quote" data-service="Mattress cleaning" aria-label="Enquire about mattress cleaning">↗</a>
+            </div>
+            <p>Care beneath the covers. Mattress cleaning for homes and accommodation, with attention to stains and everyday build-up.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-image linen-image">
+              <img src="images/linen-only.jpg" alt="Neatly folded white hotel towels and bed linen" loading="lazy">
+              <span class="number">03</span>
+            </div>
+            <div class="card-heading">
+              <h3>Linen laundry</h3>
+              <a href="#quote" data-service="Hotel linen laundry" aria-label="Enquire about hotel linen laundry">↗</a>
+            </div>
+            <p>Fresh sheets. Soft towels. Laundry support for hotels, B&amp;Bs and guesthouses, shaped around your requirements.</p>
+          </article>
+        </div>
+      </section>
+      <!-- Difference section -->
+      <section class="difference" aria-labelledby="difference-title">
+        <div class="wrap">
+          <div class="section-top">
+            <p class="eyebrow">02 / A closer look</p>
+            <span class="small-note">Move the slider. Reveal the fresh.</span>
+          </div>
+          <div class="split-heading">
+            <h2 id="difference-title">Same carpet.<br><span class="serene accent-reveal accent-side">Fresh perspective.</span></h2>
+            <p>Discover the difference a clean can make.</p>
+          </div>
+          <div class="comparison" style="--position:50%">
+            <img class="comparison-base" src="images/carpet-clean.jpg" alt="Clean blue carpet">
+            <img class="comparison-before" src="images/carpet-before-soft.jpg" alt="Blue carpet before cleaning">
+            <span class="image-label before-label">Before</span>
+            <span class="image-label after-label">After</span>
+            <div class="comparison-divider">
+              <span>‹ ›</span>
+            </div>
+            <input type="range" min="0" max="100" value="50" aria-label="Reveal clean carpet" aria-valuetext="50 percent clean carpet revealed">
+          </div>
+          <p class="comparison-caption">Carpet care, reimagined. <span>Drag or use the arrow keys ↔</span></p>
+        </div>
+      </section>
+      <!-- Hospitality services -->
+      <section id="hospitality" class="hospitality">
+        <div class="wrap hospitality-grid">
+          <div>
+            <p class="eyebrow light">03 / For hospitality</p>
+            <h2>They’ll feel<br>the <span class="accent-reveal accent-up">difference.</span></h2>
+            <p class="hospitality-copy">Fresh rooms. Beautifully cared-for linen.<br>Help your guests feel at home, from their first step to their last goodnight.</p>
+            <a class="button white" href="#quote" data-service="Hotel linen laundry">Let’s talk hospitality <span>↗</span></a>
+          </div>
+          <div class="hospitality-right">
+            <div class="linen-window">
+              <video class="hospitality-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+                <source src="images/bedset-video.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="hospitality-details">
+              <div>
+                <h3>Guest-room textile care</h3>
+                <p>Carpets and mattresses, for individual rooms or a planned refresh.</p>
+              </div>
+              <div>
+                <h3>Laundry that fits your property</h3>
+                <p>Discuss linen types, volumes and frequency with us.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="giant-word" aria-hidden="true">fresh comfort.</span>
+      </section>
+      <!-- Process section -->
+      <section class="process wrap">
+        <div class="section-top">
+          <p class="eyebrow">04 / Nice and simple</p>
+        </div>
+        <div class="split-heading">
+          <h2>Your fresh start.<br><span class="serene accent-reveal accent-side">In three steps.</span></h2>
+          <p>A little information from you.<br>A clear plan for your textiles.</p>
+        </div>
+        <div class="steps">
+          <article>
+            <span>01</span>
+            <h3>Tell us what you need.</h3>
+            <p>Choose your service. Share your location, quantities and preferred timing.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Make a plan.</h3>
+            <p>Discuss the scope, quote and arrangements before going ahead.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Enjoy the fresh.</h3>
+            <p>Cleaning or laundry as agreed, with the aftercare or return details you need.</p>
+          </article>
+        </div>
+      </section>
+      <!-- Frequently asked questions -->
+      <section id="questions" class="faq-section">
+        <div class="wrap faq-grid">
+          <div>
+            <p class="eyebrow">05 / Good to know</p>
+            <h2>A few<br><span class="serene accent-reveal accent-side">fresh answers.</span></h2>
+            <p>Still have a question?<br><a href="#quote">Let’s talk ↗</a></p>
+          </div>
+          <div class="questions">
+            <details>
+              <summary>How much does cleaning cost?<span>+</span></summary>
+              <p>Quotes depend on the service, size, quantity, condition and location. Share your details so we can discuss the right scope for your enquiry.</p>
+            </details>
+            <details>
+              <summary>How long does drying take?<span>+</span></summary>
+              <p>Drying varies with the material, cleaning method, ventilation and room conditions. Ask about expected drying times when arranging your service.</p>
+            </details>
+            <details>
+              <summary>Can every stain be removed?<span>+</span></summary>
+              <p>Some stains may be permanent. The material, age and type of stain affect the outcome. Discuss any marks when requesting your quote.</p>
+            </details>
+            <details>
+              <summary>Can we arrange regular hotel laundry?<span>+</span></summary>
+              <p>Send your linen types, typical volumes and required frequency to discuss an ongoing arrangement for your property.</p>
+            </details>
+            <details>
+              <summary>Do you cover my area?<span>+</span></summary>
+              <p>Include your town or Eircode in your enquiry. Service coverage will need to be confirmed for your location.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+      <!-- Enquiry form -->
+      <section id="quote" class="quote-section wrap">
+        <div class="quote-heading">
+          <p class="eyebrow">06 / Let’s make a fresh start</p>
+          <h2>Ready for<br><span class="serene accent-reveal accent-side">a little fresh?</span></h2>
+          <p>Tell us what needs care.<br>Let’s work out the details.</p>
+          <span class="quote-spark" aria-hidden="true">✳</span>
+        </div>
+        <form id="quote-form">
+          <fieldset>
+            <legend>What can we help with?</legend>
+            <div class="service-options">
+              <label><input type="checkbox" name="service" value="Carpet cleaning"><span>Carpets</span></label>
+              <label><input type="checkbox" name="service" value="Mattress cleaning"><span>Mattresses</span></label>
+              <label><input type="checkbox" name="service" value="Hotel linen laundry"><span>Hotel laundry</span></label>
+            </div>
+          </fieldset>
+          <div class="field-row">
+            <label>Your name<input name="name" autocomplete="name" required placeholder="Alex Murphy"></label>
+            <label>Email address<input type="email" name="email" autocomplete="email" required placeholder="alex@example.com"></label>
+          </div>
+          <div class="field-row">
+            <label>Town or Eircode<input name="location" autocomplete="postal-code" required placeholder="Where do you need us?"></label>
+            <label>Property / company <span class="optional">(optional)</span><input name="company" autocomplete="organization" placeholder="Your business name"></label>
+          </div>
+          <label>A few details<textarea name="details" rows="3" required placeholder="Rooms, mattress sizes, linen volumes, timing…"></textarea></label>
+          <button class="button dark" type="submit">Send Enquiry<span>↗</span></button>
+          <div id="form-result" role="status" tabindex="-1" hidden></div>
+        </form>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="wrap footer-top">
+        <a class="brand" href="#">fresh.</a>
+        <p>Care for every fibre.</p>
+        <!-- Social link placeholders: add href values when URLs are available. -->
+        <div class="footer-social" role="group" aria-label="Social media">
+          <a class="social-placeholder" role="link" aria-disabled="true" tabindex="0" aria-label="WhatsApp" title="WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.5 3.5A11.3 11.3 0 0 0 2.8 17L1.3 22.7l5.8-1.5A11.3 11.3 0 0 0 20.5 3.5Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8.2 6.8c-.3-.7-.6-.7-.9-.7h-.7c-.3 0-.7.1-1 .5-.4.4-1.2 1.2-1.2 2.9s1.3 3.3 1.5 3.5c.2.2 2.5 3.8 6.1 5.3 3 1.2 3.6 1 4.2.9.6-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.2-.3-.3-.7-.5l-2.3-1.1c-.3-.1-.6-.2-.8.2l-1.1 1.3c-.2.2-.4.3-.8.1-.4-.2-1.5-.6-2.8-1.8-1-.9-1.8-2-2-2.4-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.4.4-.6.1-.2 0-.5-.1-.7l-1.1-2.6Z" transform="translate(2 1) scale(.83)"/></svg>
+          </a>
+          <a class="social-placeholder" role="link" aria-disabled="true" tabindex="0" aria-label="Instagram" title="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.1"/></svg>
+          </a>
+          <a class="social-placeholder" role="link" aria-disabled="true" tabindex="0" aria-label="Facebook" title="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14.2 22v-9h3l.5-3.5h-3.5V7.3c0-1 .3-1.7 1.8-1.7h1.9V2.5c-.3-.1-1.5-.2-2.8-.2-2.8 0-4.7 1.7-4.7 4.8v2.4H7.3V13h3.1v9Z"/></svg>
+          </a>
+        
+<a class="social-placeholder" role="link" aria-disabled="true" tabindex="0" aria-label="Email" title="Email">
+  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2.5" y="4.5" width="19" height="15" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m3.5 6 8.5 7 8.5-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+</div>
+        <a href="#main">Back to top ↑</a>
+      </div>
+      <div class="wrap footer-bottom">
+        <span>© <span id="year">2026</span> FRESH · All rights reserved</span>
+        <span>Carpets / Mattresses / Hotel linen</span>
+      </div>
+    </footer>
+  </body>
+</html>
